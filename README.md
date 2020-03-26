@@ -1,4 +1,4 @@
-# CypherDog2.1
+# CypherDog3.0
 PoSh BloodHound Dog Whisperer
 
 aka PowerShell Cmdlets to interact with BloodHound Data via Neo4j REST API
