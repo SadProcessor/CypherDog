@@ -1,28 +1,4 @@
-﻿## CHANGES
-
-## New Edges
-# ACL: AddKeyCredentialLink/WriteSPN/AddSelf
-
-## New Props
-# Various > expecting no change required
-
-
-## TODO
-
-## Edges
-# [x] Add New Edges to Enums
-# [x] Test Edges with EdgeString/Edge/Path
-
-## Props
-# [x] Check auto-populate OK
-# [x] Add time props to FixNode
-
-
-## Broken Stuff
-# [x] fix Labels[0] in path/edge/pathtoobj <--------------- also breaks in Watchdog
-
-
-###########################################################
+﻿###########################################################
 # CypherDog4.1 - BloodHound Dog Whisperer - @SadProcessor #
 ###########################################################
 
