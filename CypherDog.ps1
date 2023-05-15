@@ -344,13 +344,13 @@ function CacheNode{
         Write-Verbose "Caching node names..."
         "// Cache All Nodes
 MATCH (x) WHERE x.name IS NOT NULL
-WITH DISTINCT [lbl IN LABELS(x) WHERE NOT lbl=~'Base'][0] AS label, COLLECT(x.name) AS list
+WITH DISTINCT [lbl IN LABELS(x) WHERE NOT lbl=~'Base|AZBase'][0] AS label, COLLECT(x.name) AS list
 RETURN {Label:label,List:list}"}
         else{Foreach($Label in $Type){
             Write-Verbose "Caching $Label names..."
             "// Cache $Label names
 MATCH (x:$Label) WHERE x.name IS NOT NULL
-WITH DISTINCT [lbl IN LABELS(x) WHERE NOT lbl=~'Base'][0] AS label, COLLECT(x.name) AS list
+WITH DISTINCT [lbl IN LABELS(x) WHERE NOT lbl=~'Base|AZBase'][0] AS label, COLLECT(x.name) AS list
 RETURN {Label:label,List:list}"
             }}
     $Res = Cypher $CQL
