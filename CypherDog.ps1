@@ -1,30 +1,9 @@
 ## CHANGES
-# fix Dynamic param alias
-
-## New Edges
-# ACL: AddKeyCredentialLink/WriteSPN/AddSelf
-
-## New Props
-# Various > expecting no change required
-
-
-## TODO
-
-## Edges
-# [x] Add New Edges to Enums
-# [x] Test Edges with EdgeString/Edge/Path
-
-## Props
-# [x] Check auto-populate OK
-# [x] Add time props to FixNode
-
-
-## Broken Stuff
-# [x] fix Labels[0] in path/edge/pathtoobj <--------------- also breaks in Watchdog
+# added edges node types 4.3 / 4.3.1
 
 
 ###########################################################
-# CypherDog4.1 - BloodHound Dog Whisperer - @SadProcessor #
+# CypherDog4.3 - BloodHound Dog Whisperer - @SadProcessor #
 ###########################################################
 
 ###########################################################
@@ -130,6 +109,7 @@ enum EdgeType{
     AllowedToAct
     SQLAdmin
     HasSIDHistory
+    DumpSMSAPassword
     #Azure
     AZAvereContributor
     AZContains
@@ -225,6 +205,7 @@ enum EdgeSpc{
     AllowedToAct
     SQLAdmin
     HasSIDHistory
+    DumpSMSAPassword
     }
 
 # Azure
